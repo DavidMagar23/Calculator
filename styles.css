@@ -16,14 +16,44 @@ body {
     flex-direction: column;
 }
 
-.container {
-    flex-grow: 1;
-}
-
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.container {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.theme {
+    background-color: black;
+    width: 65px;
+    height: 35px;
+    margin: 0 auto 15px;
+
+    border-radius: 30px;
+}
+
+#theme-switch {
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+
+.circle {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+    transition: transform 0.5s;
 }
 
 .calculator {
@@ -36,7 +66,7 @@ body {
 
     border: 3px solid black;
     border-radius: 25px;
-    box-shadow: 10px 10px rgb(87, 87, 87);
+    box-shadow: 12px 12px 10px rgb(87, 87, 87);
 
     display: flex;
     flex-direction: column;
@@ -51,7 +81,7 @@ body {
 
     height: 60px;
     
-    background-color: lavender;
+    background-color: rgb(188, 188, 247);
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -80,6 +110,16 @@ button {
 
     font-family: monospace, Helvetica, sans-serif;
     font-weight: bold;
+
+    background-color: rgb(209, 188, 247);
+}
+
+.color {
+    background-color: rgb(255, 239, 252);
+}
+
+.color2 {
+    background-color: rgb(248, 164, 164);
 }
 
 .equate {
@@ -87,7 +127,10 @@ button {
 }
 
 .footer {
-    height: 10vh;
+    height: 6vh;
 
     background-color: rgb(26, 71, 139);
+
+    color: white;
+    letter-spacing: 0.3rem;
 }
