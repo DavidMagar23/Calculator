@@ -81,7 +81,7 @@ function equate () {
     // Explicit conditions //
     if ( sign == '/' && b == 0) {
         display.innerText = '';
-        alert("You can't do that");
+        alert("You can't do that!");
     }
     else if (display.innerText == 'NaN') {
         display.innerText = '';
@@ -109,10 +109,40 @@ let theme = document.querySelector('.input-theme'),
 theme.addEventListener("change", (e) => {
     if (!toggle) {
         circle.style.transform = 'translateX(30px)';
+
+        document.documentElement.style.setProperty('--color0', 'rgb(220, 185, 248)');
+        document.documentElement.style.setProperty('--color1', 'white');
+        document.documentElement.style.setProperty('--color2', 'white');
+        document.documentElement.style.setProperty('--color3', 'white');
+        document.documentElement.style.setProperty('--color4', 'white');
+        document.documentElement.style.setProperty('--color5', 'rgb(49, 49, 49)');
+        document.documentElement.style.setProperty('--color6', 'rgb(194, 177, 255');
+        document.documentElement.style.setProperty('--color7', 'rgb(230, 246, 255)');
+        document.documentElement.style.setProperty('--color8', 'rgb(255, 231, 231)');
+        document.documentElement.style.setProperty('--color9', 'white');
+        document.documentElement.style.setProperty('--color10', 'black');
+        document.documentElement.style.setProperty('--color11', 'white');
+        document.documentElement.style.setProperty('--color12', 'rgb(87, 87, 87)');
+
         toggle = true;
     }
     else {
         circle.style.transform = 'translateX(0px)';
+
+        document.documentElement.style.setProperty('--color0', '');
+        document.documentElement.style.setProperty('--color1', '');
+        document.documentElement.style.setProperty('--color2', '');
+        document.documentElement.style.setProperty('--color3', '');
+        document.documentElement.style.setProperty('--color4', '');
+        document.documentElement.style.setProperty('--color5', '');
+        document.documentElement.style.setProperty('--color6', '');
+        document.documentElement.style.setProperty('--color7', '');
+        document.documentElement.style.setProperty('--color8', '');
+        document.documentElement.style.setProperty('--color9', '');
+        document.documentElement.style.setProperty('--color10', '');
+        document.documentElement.style.setProperty('--color11', '');
+        document.documentElement.style.setProperty('--color12', '');
+
         toggle = false;
     }
 })
